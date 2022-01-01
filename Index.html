@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<script>
+background(159, 204, 237);
+var currentScreen;
+
+var playbuttonX = 118.5;
+var playbuttonY = 180;
+var playbuttonW = 162;
+var playbuttonH = 93;
+
+var StartScreen = function() {
+//start
+currentScreen = 1;
+textSize(40);
+text("Make A Monster!",50,80);
+fill(48, 209, 86);
+stroke(26, 110, 46);
+rect(playbuttonX,playbuttonY,playbuttonW,playbuttonH);
+fill(255, 255, 255);
+textSize(39);
+text("Play",playbuttonX + 46,playbuttonY + 56);
+};
+
+//game part 1
+var BodyColor = [62,0,0];
+var BodyX = 200;
+var BodyY = 200;
+
+var GamePart1 = function() {
+ background(159,204,237);
+    stroke(0, 0, 0);
+    // color selector
+    //Red
+    fill(240, 43, 43);
+    ellipse(85,330,35,35);
+    //Orange
+    fill(255, 157, 0);
+    ellipse(130,330,35,35);
+    //Yellow
+    fill(238, 255, 0);
+    ellipse(175,330,35,35);
+    //Green
+    fill(0, 255, 34);
+    ellipse(220,330,35,35);
+    //Blue
+    fill(46, 127, 232);
+    ellipse(265,330,35,35);
+    //Purple
+    fill(160, 85, 235);
+    ellipse(310,330,35,35);
+    fill(255, 255, 255);
+</script>
+</html>
